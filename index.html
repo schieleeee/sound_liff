@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>音を鳴らすLIFF</title>
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+</head>
+<body>
+  <h1>音が鳴ります！</h1>
+
+  <audio id="audio" src="sound.mp3"></audio>
+
+  <script>
+    async function main() {
+      await liff.init({ liffId: "あとでここにLIFF IDを入れる" });
+      document.getElementById('audio').play();
+    }
+    main();
+  </script>
+</body>
+</html>
